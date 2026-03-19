@@ -1,197 +1,147 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
-	<title>온라인 프로필</title>
-    <style>
-        #container{
-            width: 1000px;
-            margin : 5px auto;
-        }
-        #left{
-            float:left;
-            width: 300px;
-            background-color: #5656e9;
-            color: white;
-            border-radius: 20px 0 0 20px
-        }
-
-        #namecard, #detail, #sns{
-            width: 300px;
-            box-sizing: border-box;
-            text-align: center;
-        }
-
-        #namecard{
-            height: 300px;
-            padding-top: 20px;
-            border-radius: 20px 0 0 0;
-        }
-
-        #detail{
-            height: 150px;
-            padding-top: 20px;
-        }
-
-        #sns{
-            height: 300px;
-            padding-top: 20px;
-            border-radius: 0 0 0 20px;
-        }
-
-        #namecard img{
-            width:150px;
-            height:150px;
-            border-radius:50%;
-            object-fit:cover;
-            margin-top: 15px;
-        }
-        a{
-            display:inline-block;
-            padding:10px 15px;
-            background-color:white;
-            color:#5656e9;
-            border-radius:20px;
-            text-decoration:none;
-            font-weight:bold;
-        }
-        a:hover{
-            background-color: rgb(204, 224, 255);
-            color: white;
-        }
-        #main{
-            float:left;
-            width:450px;
-            height: 740px;
-            background: #eee;
-            padding-left: 20px;
-            padding-top: 10px;
-            border-radius: 0 20px 20px 0;
-            box-shadow: 3px 3px 5px rgb(194, 194, 194);
-        }
-        .subtitle{
-            border-left: 5px solid #5656e9;
-            padding-left: 10px;
-        }
-        table, tr, th, td{
-            border : 2px solid rgb(224, 224, 224); /* 2px 크기의 검은색 선(solid) */
-            border-collapse: collapse; /* 겹치는 선을 하나로 */
-            padding: 5px 10px;  /* 상하 5px 좌우 20px */
-            text-align: center; /* 가운데 정렬*/
-        }
-        th {
-            color: white;
-        }
-        .tr2{
-            background-color: #5656e9;
-        }
-
-        #time {
-            font-size: 30px;
-            font-weight: bold;
-            color: rgb(255, 255, 255);
-            text-align: center;
-        }
-
-    </style>
-	<meta charset="utf-8">
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <div id="container">
-        <div id="left">
-            <div id="namecard">
-                <img src="RYAN_1.jpg" alt="라이언">
-                <h1>Hong Gildong</h1>    
-                <p>프로그래밍 재밌어요!</p>
-            </div>
-            <div id="detail">
-                <p>⛪Incheon, Korea</p>
-                <p>📧test@naver.com</p>                                 
-            </div>
-            <div id="sns">
-                <h2>SNS</h2>
-                <h3><a href="#">클릭!</a></h3>
-                <div id="time"></div>
-            </div>           
-        </div>
-        <div id="main">
-            <div>
-                <h2 class="subtitle">자기소개</h2>
-                <p><mark>프로그래밍</mark>에 관심이 많습니다. <br>현재 열심히 공부하며 코딩 중!</p>
-            </div>
+  <div class="header">
+    <div class="container header-inner">
+      <div class="profile">PROFILE</div>
 
-            <div>
-                <h2 class="subtitle">Experience</h2>
-                <ul>
-                    <li>프론트엔드
-                        <ul>
-                            <li>HTML/CSS/JAVASCRIPT </li>
-                            <li>웹 페이지 </li>
-                            <li>일단 다 해볼게</li> 
-                        </ul>
-                    </li>
-                    <li>백엔드
-                        <ul>
-                            <li>자바 잘함 </li>
-                            <li>오라클 더 잘함</li>
-                        </ul>                        
-                    </li>
-                </ul>             
-            </div>
-
-            <div>
-                <h2 class="subtitle">보유 기술</h2>
-                <li style="list-style: none;"> 
-                    <ul>
-                        <li>자바 </li>
-                        <li>오라클</li>
-                    </ul>                        
-                </li>
-            </div>
-
-            <div>
-                <h2 class="subtitle">Education</h2>
-                <table>
-                  <div style="text-align: center;">학력 사항</div>
-                  <div>
-                      <tr class="tr2">
-                          <th>출신학교</th>
-                          <th>전공</th>
-                          <th>기간</th>
-                          <th>구분</th>
-                      </tr>
-                  </div>
-                  <div>
-                      <tr>
-                          <td>좋은대학교</td>
-                          <td>좋은학과</td>
-                          <td>2010.3 ~ 2013.2</td>
-                          <td>졸업</td>
-                      </tr>
-                      <tr>
-                          <td>꽤좋은고등학교</td>
-                          <td> - </td>
-                          <td>2007.3 ~ 2009.2</td>
-                          <td>졸업</td>
-                      </tr>
-                  </div>
-                </table>
-            </div>
-        </div>        
+      <div class="header-right">
+        <div class="header-right-text active">HOME</div>
+        <div class="header-right-text">ABOUT</div>
+      </div>
     </div>
-</body>
-</html>
-<script>
+  </div>
+
+  <div>
+    <div class="main">
+      <div class="container main-inner">
+        <div class="main-text">
+          <div class="title">PROFILE</div>
+          <h1>
+            안녕하세요,<br/>
+            저는 <span class="mark">김예림</span>입니다.
+          </h1>
+          <div class="main-text-sub">
+            사용자에게 보기 편한 화면을 만드는 것을 목표로 하는
+            공부 중인 사람입니다.
+            디자인과 기능을 열심히 배우며 성장하고 있습니다.
+          </div>
+
+          <div class="main-info">
+            <div><span>NAME</span> KIM YERIM</div>
+            <div><span>EMAIL</span> yerim@example.com</div>
+            <div><span>PHONE</span> 010-1234-5678</div>
+          </div>
+
+          <div class="time-box">
+            <span class="time-label">현재 시간</span>
+            <span id="time"></span>
+          </div>
+
+          <div>
+            <button class="btn" id="aboutBtn">ABOUT ME</button>
+          </div>
+        </div>
+
+        <div class="main-image">
+          <div class="main-image-box">
+            <img src="../media/RYAN_222.png" class="main-image" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="introduction">
+      <div class="container">
+        <div class="introduction-head">
+          <div class="title">INTRODUCTION</div>
+          <h2>저를 간단하게 소개할게요</h2>
+        </div>
+
+        <div class="introduction-grid">
+          <div class="introduction-box">
+            <h3>PROFILE</h3>
+            <div>
+              저는 무엇무엇무엇을 좋아하고,
+              어떤 어떤 어떤 어떤 어떤 어떤 것에 관심이 많습니다.
+            </div>
+          </div>
+
+          <div class="introduction-box">
+            <h3>SKILLS</h3>
+            <div>
+              JAVA, ORACLE, HTML 등을 바탕으로
+              웹페이지를 직접 구현하기 위해 공부하고 있습니다.
+            </div>
+          </div>
+
+          <div class="introduction-box">
+            <h3>EXPERIENCE</h3>
+            <div>
+              경험 쌓는중...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact">
+      <div class="container contact-grid">
+        <div>
+          <div class="title">CONTACT</div>
+          <h2>연락처 정보</h2>
+        </div>
+
+        <div class="contact-gap">
+          <div class="contact-box">
+            <span class="contact-title">EMAIL</span>
+            <span>yerim@email.com</span>
+          </div>
+          <div class="contact-box">
+            <span class="contact-title">PHONE</span>
+            <span>010-1234-5678</span>
+          </div>
+          <div class="contact-box">
+            <span class="contact-title">INSTAGRAM</span>
+            <span>@ID_instagram</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer2">
+      <p>KIM YERIM PROFILE</p>
+    </div>
+  </div>
+
+  <script>
     setInterval(()=>{
         let datetime = new Date();
         let obj = document.querySelector("#time");
         let second = datetime.getSeconds() < 10 ? "0" + datetime.getSeconds() : datetime.getSeconds();
+        let minutes = datetime.getMinutes() < 10 ? "0" + datetime.getMinutes() : datetime.getMinutes();
         let time = datetime.getHours() + " : "
-                    + datetime.getMinutes() + " : "
+                    + minutes + " : "
                     + second;
 
         obj.innerHTML = time;
     }, 1000);
 
-</script>
+    const confirmBtn = document.getElementById("aboutBtn");
+    confirmBtn.addEventListener("click", function () {
+      const result = confirm("ABOUT 페이지로 이동할까요?");
+      if (result) {
+        location.href = "about.html";
+      }
+    });
+  </script>
+</body>
+</html>
