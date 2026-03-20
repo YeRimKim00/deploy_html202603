@@ -1,11 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <link rel="stylesheet" href="style_test.css" />
 </head>
 <body>
-    <div>아직 안했어영</div>
+  <div class="header">
+    <div class="container header-inner">
+      <div class="profile">PROFILE</div>
+
+      <div class="header-right">
+        <div class="header-right-text">HOME</div>
+        <div class="header-right-text active">ABOUT</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-page">
+    <div class="container">
+      <div class="title">ABOUT PAGE</div>
+      <h1>ABOUT ME</h1>
+      <div class="about-text">
+        저의 기본 정보, 기술, 경험, 연락처 등을 소개하는 페이지입니다.
+      </div>
+    </div>
+  </div>
+
+  <div class="info">
+    <div class="container">
+      <div class="info-grid">
+        <div class="info-gap">
+          <div class="info-box">
+            <h2>PROFILE</h2>
+            <p>
+              제 이름은 김예림입니다.
+            </p>
+          </div>
+
+          <div class="info-box">
+            <h2>EXPERIENCE</h2>
+            <p>
+              당첨에게 갤럭시만큼 가스에게도 임대으로다가 드촬영하다. 
+              달밖에 연동에게 생선으로 주전자같이는 좋아요부우수하다. 
+              디렉터리쯤은 토스터에게서 수정까지는 송장로도 이혼하다.
+            </p>
+          </div>
+
+          <div class="info-box">
+            <h2>FUTURE PLAN</h2>
+            <p>
+              에어컨을 쓰레기통하고도 버터하고도 예금에서 가방하오다. 
+              텔레비전커녕 고객센터마다 청소기께는 아버지로도삭제하다. 
+
+            </p>
+          </div>
+        </div>
+
+        <div class="info-right">
+          <div class="right-box">
+            <h3>SKILLS</h3>
+            <ul>
+              <li><span>• </span>JAVA</li>
+              <li><span>• </span>OLACLE</li>
+              <li><span>• </span>HTML</li>
+              <li><span>• </span>CSS</li>
+            </ul>
+          </div>
+
+          <div class="right-box">
+            <h3>CONTACT</h3>
+            <ul>
+              <li><span>• </span>Email: yerim@example.com</li>
+              <li><span>• </span>Phone: 010-1234-5678</li>
+              <li><span>• </span>Instagram: @yerim_portfolio</li>
+            </ul>
+          </div>
+
+          <div class="right-box">
+            <h3>HOBBY</h3>
+            <ul>
+              <li><span>• </span>음악 듣기</li>
+              <li><span>• </span>게임 하기</li>
+              <li><span>• </span>유튜브 영상 시청</li>
+              <li><span>• </span>영화 감상</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-btn">
+        <button class="btn" id="homeBtn">돌아가기</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer2">
+      <p>KIM YERIM PROFILE</p>
+    </div>
+  </div>
+
+  <script>
+    const confirmBtn = document.getElementById("homeBtn");
+    confirmBtn.addEventListener("click", function () {
+      location.href = "index_test.html";
+    });
+  </script>
 </body>
 </html>
