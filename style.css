@@ -135,7 +135,7 @@ img {
   font-weight: 700;
 }
 
-.btn{
+.btn {
   padding: 14px 24px;
   border-radius: 10px;
   font-weight: 800;
@@ -150,6 +150,10 @@ img {
 .btn:hover {
   background-color: #ff9d45;
   transform: translateY(-2px);
+}
+
+.home-btn {
+  margin-top: 20px;
 }
 
 .main-image-box {
@@ -167,7 +171,9 @@ img {
 
 /* introduction, contact */
 .introduction,
-.contact {
+.contact,
+.info,
+.about-page {
   padding: 80px 0;
 }
 
@@ -212,7 +218,6 @@ img {
 }
 
 /* contact 박스 */
-
 .contact-grid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -242,6 +247,78 @@ img {
 .contact-title {
   color: #b7e34f;
   font-weight: 800;
+}
+
+/* ABOUT */
+.about-text {
+  color: #d5d5d5;
+  width: 680px;
+}
+
+.info-grid{
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 28px;
+}
+
+.info-gap {
+  display: grid;
+  gap: 22px;
+}
+
+.info-box {
+  background-color: #181818;
+  border-radius: 20px;
+  padding: 32px;
+  border: 1px solid #333333;
+}
+
+.info-box h2 {
+  font-size: 22px;
+  color: #f28c28;
+  margin-bottom: 16px;
+}
+
+.info-box p {
+  color: #dddddd;
+}
+
+.info-right {
+  display: grid;
+  gap: 22px;
+}
+
+.right-box {
+  background-color: #181818;
+  border-radius: 20px;
+  padding: 28px;
+  border: 1px solid #333333;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.right-box:hover {
+  transform: translateY(-4px);
+  border-color: rgb(204, 116, 28);
+}
+
+.right-box h3 {
+  font-size: 18px;
+  color: #b7e34f;
+  margin-bottom: 16px;
+}
+
+.right-box ul {
+  list-style: none;
+  display: grid;
+  gap: 10px;
+}
+
+.right-box li {
+  color: #dddddd;
+}
+
+.right-box span {
+  color: #f28c28;
 }
 
 /* 푸터 */
