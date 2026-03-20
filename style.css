@@ -218,7 +218,6 @@ img {
 }
 
 /* contact 박스 */
-
 .contact-grid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -251,7 +250,6 @@ img {
 }
 
 /* ABOUT */
-
 .about-text {
   color: #d5d5d5;
   width: 680px;
