@@ -97,7 +97,7 @@ img {
 }
 
 .main-text-sub {
-  max-width: 620px;
+  width: 500px;
   color: #d5d5d5;
   font-size: 17px;
   margin-bottom: 28px;
