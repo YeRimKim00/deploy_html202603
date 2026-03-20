@@ -218,6 +218,7 @@ img {
 }
 
 /* contact 박스 */
+
 .contact-grid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
